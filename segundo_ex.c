@@ -1,6 +1,6 @@
 #include <stdio.h>
    int calculo(int espetaculo, float precocnv, int calculoqnt);
-main()
+int main()
 {
     float precocnv;
     int espetaculo, calculoqnt;   
@@ -12,7 +12,7 @@ main()
     printf("- Cada convite foi vendido à: %.2f\n", precocnv);
     printf("- Para ter lucro, é preciso render mais de: %d convites\n", calculo(espetaculo,precocnv,calculoqnt));
     printf("***********************************************\n");
-
+   return 0;
 }
 int calculo(int espetaculo, float precocnv, int calculoqnt)
 {
