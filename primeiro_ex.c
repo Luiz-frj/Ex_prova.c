@@ -1,9 +1,9 @@
 #include <stdio.h>
    double calcularR( double pesoR, double racaoG1, double racaoG2);
-main() 
+int main() 
 {
    
-   double pesoR, racaoG1, racaoG2, racaoR;
+   double pesoR, racaoG1, racaoG2;
 
     printf("informe o peso da ração em kilos: \n");
     scanf("%lf", &pesoR);
@@ -19,6 +19,7 @@ main()
     printf("- quantas gramas o outro gato recebeu: %.2lf\n", racaoG2);
     printf("- restante da ração depois de 5 dias: %.2lf kilos\n", calcularR (pesoR,racaoG1,racaoG2)/1000);
     printf("***********************************************\n");
+   return 0;
 }
 
 double calcularR(double pesoR, double racaoG1, double racaoG2)
